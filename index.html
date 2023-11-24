@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="media/lol.ico">
+    <title>League of Memory</title>
+</head>
+<body>
+    <main>
+
+        <!--<section class="sectionModo">
+          <h1>Seleccion de Rol</h1>
+          <button id="top">TOP</button>
+          <button id="mid">MID</button>
+          <button id="adc">ADC</button>
+          <button id="supp">SUPPORT</button>
+          <button id="jg">JUNGLA</button>
+        </section>-->
+
+        <section class="sectionMain">
+            <h1>League of Memory</h1>
+            <div class="tablero">
+               
+                <button id="0" class="botones" onclick="destapar(0)"></button>
+                <button id="1" class="botones" onclick="destapar(1)"></button>
+                <button id="2" class="botones" onclick="destapar(2)"></button>
+                <button id="3" class="botones" onclick="destapar(3)"></button>
+               
+               
+                <button id="4" class="botones" onclick="destapar(4)"></button>
+                <button id="5" class="botones" onclick="destapar(5)"></button>
+                <button id="6" class="botones" onclick="destapar(6)"></button>
+                <button id="7" class="botones" onclick="destapar(7)"></button>
+               
+               
+                <button id="8" class="botones" onclick="destapar(8)"></button>
+                <button id="9" class="botones" onclick="destapar(9)"></button>
+                <button id="10" class="botones" onclick="destapar(10)"></button>
+                <button id="11" class="botones" onclick="destapar(11)"></button>
+               
+               
+                <button id="12" class="botones" onclick="destapar(12)"></button>
+                <button id="13" class="botones" onclick="destapar(13)"></button>
+                <button id="14" class="botones" onclick="destapar(14)"></button>
+                <button id="15" class="botones" onclick="destapar(15)"></button>
+                   
+            </div>
+        </section>
+
+        <section class="sectionEstadisticas">
+            <h2 id="aciertos" class="estadisticas">Aciertos: 0/8</h2>
+            <h2 id="tiempor" class="estadisticas">Tiempo: 30 segundos</h2>
+            <h2 id="movimientos" class="estadisticas">Movimientos: 0</h2>
+            
+            <button  id="reiniciar" class="reiniciar" onclick="window.location.reload();">Reiniciar ↺</button>
+
+            <label for="select">Dificultad</label>
+
+            <select class="dificultad">
+              <option value="0">Facil</option>
+              <option value="1">Normal</option>
+              <option value="2">Dificil</option>
+            </select>
+        </section>
+
+    </main>
+
+    <footer>
+      <a class="iconos"  href="https://github.com/AgustinRuiz02/JuegoDeMemoria" target="_blank">
+        <img id="icon1" src="media/logotipo-de-github.png">
+      </a>
+      <a class="iconos" href="https://www.linkedin.com/in/agust%C3%ADn-ruiz-846a97230/" target="_blank">
+        <img id="icon2" src="media/linkedin.png">
+      </a>  
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

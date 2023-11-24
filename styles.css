@@ -1,0 +1,257 @@
+/*::-webkit-scrollbar{
+    display: none;
+}*/
+
+*{
+    /*border: solid red;*/
+    cursor: url(media/mouse/default.png), auto; 
+    user-select: none;
+}
+
+@font-face {
+    font-family:"FrizQuadrataRegular";
+    src: url(media/Font/FrizQuadrataRegular.ttf);
+}
+
+body {
+    background: linear-gradient(-45deg, rgb(55, 32, 98) 0%, rgba(12,68,102,1) 33%, rgba(55,32,98) 66%, rgba(12,68,102,1) 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    font-family: 'FrizQuadrataRegular';
+    color: aliceblue;
+    cursor: url(media/mouse/default.png), auto;
+    
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.dark {
+    background: linear-gradient(-45deg, rgb(70, 70, 70) 0%, rgba(70,70,70) 33%, rgba(70,70,70) 66%, rgba(70,70,70) 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: aliceblue;
+    cursor: url(media/mouse/default.png), auto;
+    filter: grayscale(50%);   
+}
+
+main{
+    width: 1250px;
+    margin: 55px 320px 75px;
+    display: flex;
+    align-items: center;
+}
+
+.tablero {
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+.sectionMain{
+    background-color: rgba(255,255,255,0.2);
+    margin-left: 300px;
+    padding: 0 10px 10px 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    box-shadow: -15px 5px 75px rgba(0, 0, 0, 0.25);
+    color: rgba(248, 220, 60, 0.9);
+    font-weight: bold;
+    font-size: 22px;
+    -webkit-text-stroke: 0.5px rgba(100, 89, 28, 0.471);
+}
+
+h1{
+    text-align: center;
+}
+
+.botones{
+    height: 135px;
+    width: 135px;
+    font-size: 40px;
+    color: white;
+    background-color: #c2c2c2;
+    transition: .25s;
+    border-color: #0f4258;
+    cursor: url(media/mouse/click.png), auto;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.25);
+}
+
+.botones:active{
+    background-color: #747474;
+}
+
+
+
+.botones:hover{
+    transform: scale(1.030);
+}
+
+button:hover{
+    cursor: url(media/mouse/click.png), auto;
+}
+
+/*.sectionModo{
+    background-color: rgba(255,255,255,0.2);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 250px;
+    height: 575px;
+    padding: 0 40px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.175);
+}
+
+.sectionModo button{
+    text-align: center;
+    height: 60px;
+    width: 200px;
+    margin-left: 26px;
+    margin-top: 25px;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    border-radius: 8px;
+    font-family: "FrizQuadrataRegular";
+}*/
+
+#top{
+    border-color: blue;
+}
+
+#mid{
+    border-color: red;
+}
+
+#adc{
+    border-color: yellow;
+}
+
+#supp{
+    border-color: fuchsia;
+}
+
+#jg{
+    border-color: greenyellow;
+}
+
+.sectionEstadisticas{
+    background-color: rgba(255,255,255,0.2);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 250px;
+    height: 575px;
+    padding: 0 40px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.175);
+
+}
+
+.estadisticas{
+    border: 1px solid white;
+    height: 105px;
+    width: 245px;
+    border-radius: 8px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+}
+
+.reiniciar{
+    text-align: center;
+    height: 60px;
+    width: 150px;
+    margin-left: 50.5px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    border-radius: 8px;
+    font-family: "FrizQuadrataRegular";
+}
+
+
+label{
+    text-align: center;
+    margin-left: 85px;
+}
+
+select{
+    text-align: center;
+    height: 60px;
+    width: 150px;
+    margin-left: 50.5px;
+    margin-top: 10px ;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    border-radius: 8px;
+    font-family: "FrizQuadrataRegular";
+}
+
+select:hover{
+    cursor: url(media/mouse/click.png), auto;
+}
+
+select option{
+    background-color: #0c0f599b;
+}
+
+
+footer{
+   text-align: center; 
+}
+a{
+    text-decoration: none;
+    color: rgb(153, 208, 255);
+}
+
+footer p{
+    font-size: large;
+}
+
+img{
+    width: 80%;
+}
+
+.iconos{
+    margin-right: 15px;
+    cursor: url(media/mouse/click.png), auto;
+}
+
+#icon1{
+    width: 50px;
+    height: 50px;
+    transition: .5s;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+    margin-top: 10px;
+    cursor: url(media/mouse/click.png), auto;
+}
+#icon1:hover{
+    transform: scale(1.15);
+}
+
+#icon2{
+    width: 47.5px;
+    height: 47.5px;
+    transition: .5s;
+    border: 0px solid black;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+    cursor: url(media/mouse/click.png), auto;
+}
+#icon2:hover{
+    transform: scale(1.15);
+}
